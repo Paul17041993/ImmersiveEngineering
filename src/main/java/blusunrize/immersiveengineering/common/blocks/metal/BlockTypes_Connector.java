@@ -19,7 +19,9 @@ public enum BlockTypes_Connector implements IStringSerializable, BlockIEBase.IBl
 	BREAKERSWITCH,
 	REDSTONE_BREAKER,
 	ENERGY_METER,
-	CONNECTOR_REDSTONE;
+	CONNECTOR_REDSTONE,
+	RELAY_UHV,
+	TRANSFORMER_UHV;
 
 	@Override
 	public String getName()

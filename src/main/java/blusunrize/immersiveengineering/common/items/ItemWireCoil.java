@@ -33,7 +33,7 @@ public class ItemWireCoil extends ItemIEBase implements IWireCoil
 {
 	public ItemWireCoil()
 	{
-		super("wirecoil", 64, "copper", "electrum", "hv", "rope", "structural", "redstone");
+		super("wirecoil", 64, "copper", "electrum", "hv", "rope", "structural", "redstone", "steel_uhv");
 	}
 
 	@Override
@@ -54,6 +54,8 @@ public class ItemWireCoil extends ItemIEBase implements IWireCoil
 				return WireType.STRUCTURE_STEEL;
 			case 5:
 				return WireType.REDSTONE;
+			case 6:
+				return WireType.STEEL_UHV;
 		}
 	}
 

@@ -164,6 +164,10 @@ public class BlockConnector extends BlockIETileProvider<BlockTypes_Connector>
 				return new TileEntityEnergyMeter();
 			case CONNECTOR_REDSTONE:
 				return new TileEntityConnectorRedstone();
+			case RELAY_UHV:
+				return new TileEntityRelayUHV();
+			case TRANSFORMER_UHV:
+				return new TileEntityTransformerUHV();
 		}
 		return null;
 	}

@@ -54,13 +54,13 @@ public abstract class WireType
 	public abstract boolean isEnergyWire();
 
 	//THESE VALUES ARE FOR IE's OWN WIRES!
-	public static String[] uniqueNames = {"COPPER", "ELECTRUM", "STEEL", "STRUCTURE_ROPE", "STRUCTURE_STEEL", "REDSTONE"};
+	public static String[] uniqueNames = {"COPPER", "ELECTRUM", "STEEL", "STRUCTURE_ROPE", "STRUCTURE_STEEL", "REDSTONE", "STEEL_UHV"};
 	public static double[] wireLossRatio;
 	public static int[] wireTransferRate;
 	public static int[] wireColouration;
 	public static int[] wireLength;
 	public static Item ieWireCoil;
-	public static double[] renderDiameter = {.03125, .03125, .0625, .0625, .0625, .03125};
+	public static double[] renderDiameter = {.03125, .03125, .0625, .0625, .0625, .03125, .03125};
 	@SideOnly(Side.CLIENT)
 	public static TextureAtlasSprite iconDefaultWire;
 
@@ -70,6 +70,7 @@ public abstract class WireType
 	public static WireType STRUCTURE_ROPE = new IEBASE(3);
 	public static WireType STRUCTURE_STEEL = new IEBASE(4);
 	public static WireType REDSTONE = new IEBASE(5);
+	public static WireType STEEL_UHV = new IEBASE(6);
 
 	/**
 	 * DO NOT SUBCLASS THIS.
@@ -133,7 +134,7 @@ public abstract class WireType
 		@Override
 		public boolean isEnergyWire()
 		{
-			return ordinal<3;
+			return ordinal<3 || ordinal==6;
 		}
 	}
 }

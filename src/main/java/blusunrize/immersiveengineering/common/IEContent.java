@@ -435,6 +435,8 @@ public class IEContent
 		registerTile(TileEntityRedstoneBreaker.class);
 		registerTile(TileEntityEnergyMeter.class);
 		registerTile(TileEntityConnectorRedstone.class);
+		registerTile(TileEntityRelayUHV.class);
+		registerTile(TileEntityTransformerUHV.class);
 
 		registerTile(TileEntityCapacitorLV.class);
 		registerTile(TileEntityCapacitorMV.class);
