@@ -57,6 +57,8 @@ public class BlockConnector extends BlockIETileProvider<BlockTypes_Connector>
 			return "redstoneBreaker";
 		if(meta==BlockTypes_Connector.ENERGY_METER.getMeta())
 			return "energyMeter";
+		if(meta==BlockTypes_Connector.TRANSFORMER_UHV.getMeta())
+			return "transformer_uhv";
 		return null;
 	}
 	@Override

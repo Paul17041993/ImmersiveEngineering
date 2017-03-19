@@ -38,6 +38,8 @@ public class ConnLoader implements ICustomModelLoader
 		baseModels.put("conn_hv", new ResourceLocation("immersiveengineering:block/connector/connectorHV.obj"));
 		baseModels.put("rel_hv", new ResourceLocation("immersiveengineering:block/connector/relayHV.obj"));
 
+		baseModels.put("rel_uhv", new ResourceLocation("immersiveengineering:block/connector/relayUHV.obj"));
+
 		baseModels.put("conn_struct",
 				new ResourceLocation("immersiveengineering:block/connector/connectorStructural.obj.ie"));
 
@@ -61,6 +63,11 @@ public class ConnLoader implements ICustomModelLoader
 				new ResourceLocation("immersiveengineering:block/connector/transformer_mv_right.obj"));
 		baseModels.put("transformer_mv_post",
 				new ResourceLocation("immersiveengineering:block/connector/transformerPost.obj"));
+
+		baseModels.put("transformer_uhv_left",
+				new ResourceLocation("immersiveengineering:block/connector/transformer_uhv_left.obj"));
+		baseModels.put("transformer_uhv_right",
+				new ResourceLocation("immersiveengineering:block/connector/transformer_uhv_right.obj"));
 
 		baseModels.put("eLantern",
 				new ResourceLocation("immersiveengineering:block/metalDevice/eLantern.obj"));

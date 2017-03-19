@@ -134,6 +134,9 @@
       },
       "connector_redstone": {
         "model": "immersiveengineering:smartmodel/conn_conn_redstone"
+      },
+      "relay_uhv": {
+        "model": "immersiveengineering:smartmodel/conn_rel_uhv"
       }
     },
     "facing":
